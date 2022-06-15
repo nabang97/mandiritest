@@ -1,10 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import DataTable from 'react-data-table-component'
-import ListItem from "./ListItem";
 import ReactPaginate from 'react-paginate'
 import memoize from 'memoize-one';
-import { Button, Card, Col, Row } from "react-bootstrap";
+import { Button, Card, Col, Form, Row } from "react-bootstrap";
 import Header from "./header";
 import { useNavigate} from 'react-router-dom';
 import { selectOptions } from "@testing-library/user-event/dist/select-options";
@@ -113,7 +112,7 @@ const MainContent = () => {
             <Card style={{margin: '100px', padding: '20px 50px', borderRadius: '10px'}}>
                 <Row>
                     <Col md="12"><h5 style={{textAlign: 'left'}}>Coin List</h5><br></br></Col>
-                
+                   
                  </Row>
                  <Row>
                  <DataTable 
