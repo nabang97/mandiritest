@@ -65,7 +65,7 @@ const MainContent = () => {
             sortable: true,
             cell : (row) => {
                 console.log(row.is_active);
-                return <p>{row.is_active}</p>
+                return <p>{row.is_active.toString()}</p>
             }
           },
           {

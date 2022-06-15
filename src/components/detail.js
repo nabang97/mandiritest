@@ -9,6 +9,7 @@ const Detail = () => {
 
     useEffect(() => {
         console.log(location);
+        console.log(location['state']['is_new']);
     }, [])
     
     return (<Card style={{margin: '100px', padding: '20px 50px', borderRadius: '10px',  textAlign: 'left'}}>
@@ -34,11 +35,11 @@ const Detail = () => {
                         </tr>
                         <tr>
                             <td>Is Active</td>
-                            <td className='bold'>{location.state.is_active}</td>
+                            <td className='bold'>{location.state.is_active.toString()}</td>
                         </tr>
                         <tr>
                             <td>is New?</td>
-                            <td className='bold'>{location.state.is_new}</td>
+                            <td className='bold'>{location.state.is_new.toString()}</td>
                         </tr>
                     </table>
                     </Col>
